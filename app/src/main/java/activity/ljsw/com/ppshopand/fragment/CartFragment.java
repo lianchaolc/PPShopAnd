@@ -15,7 +15,7 @@ import butterknife.BindView;
 /**
  * Created by lianchao on 2019/2/14.
  */
-//购物车
+//购物车1
 //购物车详情
 public class CartFragment extends BaseFragment implements View.OnClickListener {
     @BindView(R.id.carchebox)
