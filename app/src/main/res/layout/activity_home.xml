@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.ljsw.com.ppshopand.activity.HomeActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_color"
+        android:id="@+id/realtabcontent"
+        />
+    <activity.ljsw.com.ppshopand.widege.FragmentTabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@android:id/tabhost"
+        >
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:id="@android:id/tabcontent"
+            />
+    </activity.ljsw.com.ppshopand.widege.FragmentTabHost>
+</LinearLayout>

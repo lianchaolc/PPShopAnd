@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bg_color">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/min_civ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+    </FrameLayout>
+    <View style="@style/line_vertical" />
+
+    <TextView
+        android:id="@+id/mine_mylike_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:drawableLeft="@drawable/icon_favorite"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/largePadding"
+        android:text="我的喜欢"
+        android:textColor="@color/black" />
+    <View style="@style/line_vertical" />
+
+    <TextView
+        android:id="@+id/mine_favorites_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:drawableLeft="@drawable/icon_favorite"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/largePadding"
+        android:text="我的收藏"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:drawableLeft="@drawable/icon_list_o"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/largePadding"
+        android:text="我的订单" />
+
+    <View style="@style/line_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:drawableLeft="@drawable/icon_msg"
+
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/largePadding"
+        android:text="我的消息" />
+
+    <View style="@style/line_vertical" />
+
+    <Button
+        android:id="@+id/min_btn_outlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="退出登陆"></Button>
+</LinearLayout>

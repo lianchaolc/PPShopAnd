@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/logintitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="登陆页面" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_margin="40px"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/comment_no_msg"></ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="10px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/username"
+            android:textSize="22px" />
+
+        <EditText
+            android:id="@+id/etuserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入用户名"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="10px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/password"
+            android:textSize="22px" />
+
+        <EditText
+            android:id="@+id/mEtxtPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="密码"></EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="50px"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_height="wrap_content"
+        android:text="@string/login1"
+        android:background="@drawable/bg_btn_style_grey"
+        android:textSize="22px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loginn_reg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="注册" />
+
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="忘记密码" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/otherlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:text="11111"
+            android:gravity="center"
+            android:layout_marginLeft="-10dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="132dp"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_login" />
+
+    </RelativeLayout>
+</LinearLayout><!--<activity.ljsw.com.ppshopand.activity.widget--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--app:title="商城登录"--><!--android:id="@+id/toolbar"--><!--/>-->

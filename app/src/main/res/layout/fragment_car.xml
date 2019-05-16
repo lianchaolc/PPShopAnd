@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+   <TextView android:id="@+id/car_fragmetn"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="购物车"
+       />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/carfragment_recycle"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/bg_gray"
+        android:gravity="center_vertical">
+<CheckBox android:id="@+id/carchebox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:checked="true"
+    android:text="全选"
+    />
+<TextView
+    android:id="@+id/tvheji"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="合计："
+    android:textSize="16sp"
+    android:layout_centerVertical="true"
+    android:textColor="@color/black"
+    />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minHeight="30dp"
+            android:minWidth="100dp"
+            android:text="去结算"
+            style="@style/bigRedButton"
+            android:id="@+id/cart_order_btn"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:minHeight="30dp"
+            android:minWidth="100dp"
+            android:text="删除"
+            style="@style/bigRedButton"
+            android:id="@+id/cart_del_btn"
+            />
+    />
+    </RelativeLayout>
+
+
+</LinearLayout>

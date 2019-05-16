@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.ljsw.com.ppshopand.activity.SpinnerActivity">
+
+    <TextView
+        android:id="@+id/mytv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:text="A方法: " />
+       
+
+    <Spinner
+        android:id="@+id/mySpinnerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mytv"
+        android:spinnerMode="dropdown"
+        android:background="@color/blue"
+
+        />
+</LinearLayout>
